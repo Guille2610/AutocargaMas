@@ -15,7 +15,7 @@ composer install
 composer dump-autoload
 ```
 ## Estructura de archivos
-En este caso, se está haciendo un documento sencillo que tiene una clase User y una base de datos ProductModel, y que imprimen datos almacendos en cada objeto en un archivo index.php. A continuación se muestra todo lo que deben tener los archivos para seguir este ejemplo.
+En este caso, se está haciendo un documento sencillo que tiene una clase User y una base de datos ProductModel, y que imprimen datos almacendos en cada objeto en un archivo index.php. A continuación se muestra todo lo que deben tener los archivos para seguir este ejemplo. El folder de **vendor** se crea automáticamente siguiendo los pasos anteriores.
 
 ### Estructura del Proyecto
 ```
