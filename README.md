@@ -116,7 +116,7 @@ Verificación del index.php
 
 ## Análisis Comparativo (Conclusiones)
 
-- Mantenibilidad: considero que este tipo de herramientas son eficientes para el manejo y mantenibilidad de un proyecto, ya que este permite que no se tenga que trabajar excesivamente con archivos de estructura, y se manejan de manera automática en un entorno de desarollo colaborativo.
+- Mantenibilidad: Considero que este tipo de herramientas son eficientes para el manejo y mantenibilidad de un proyecto, ya que este permite que no se tenga que trabajar excesivamente con archivos de estructura, y se manejan de manera automática en un entorno de desarollo colaborativo.
 - Eficiencia de Memoria: El sistema de Lazy Loading es efectivo porque permite que no se carguen todos los objetos de un sistema, sino que se apliquen los necesarios dependiendo de la labor solicitada
 - Estandarización: Mantener un estándar promueve la portabilidad de un trabajo a distintos departamentos de un área, y ayuda a la comunidad programadora en general, permitiendo que un grupo de personas dominen un campo y se puedan crear soluciones de manera más rápida y robusta.  
 
