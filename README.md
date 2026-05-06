@@ -1,4 +1,4 @@
-# Autocarga de Composer 
+# Autocarga de Composer - Guillermo Mas | 1GS131
 
 Composer es un administrador de dependencias para PHP, que permite definir el uso de paquetes de código de terceros en un proyecto, facilitando su instalación y actualización.
 El objetivo de este laboratorio es crear un proyecto básico que implemente la Carga Automática (Autoload) bajo el Estándar PSR-4 con Composer.
@@ -15,7 +15,7 @@ composer install
 composer dump-autoload
 ```
 ## Estructura de archivos
-En este caso, se está haciendo un documento sencillo que tiene una clase User y una base de datos ProductModel, y que imprimen datos almacendos en cada objeto en un archivo index.php
+En este caso, se está haciendo un documento sencillo que tiene una clase User y una base de datos ProductModel, y que imprimen datos almacendos en cada objeto en un archivo index.php. A continuación se muestra todo lo que deben tener los archivos para seguir este ejemplo.
 
 ### Estructura del Proyecto
 ```
@@ -93,6 +93,33 @@ echo "\n";
 
 ?>
 ```
+
+### composer.json
+```
+{"autoload": {
+    "psr-4": { 
+        "App\\": "app/",
+        "Database\\": "database/"
+        }
+    }
+}
+```
+
+## Pruebas de ejecución
+
+- Paso 1
+<img width="781" height="224" alt="image" src="https://github.com/user-attachments/assets/da8154cf-9859-45c3-8df5-ee27cd87a658" />
+- Paso 2
+<img width="829" height="115" alt="image" src="https://github.com/user-attachments/assets/001ac66a-06e1-430d-8e6b-7050a3b947c0" />
+Verificación del index.php
+<img width="921" height="165" alt="image" src="https://github.com/user-attachments/assets/2b792efb-764f-4cf7-ae3e-d708708a671d" />
+
+## Análisis Comparativo (Conclusiones)
+
+- Mantenibilidad: considero que este tipo de herramientas son eficientes para el manejo y mantenibilidad de un proyecto, ya que este permite que no se tenga que trabajar excesivamente con archivos de estructura, y se manejan de manera automática en un entorno de desarollo colaborativo.
+- Eficiencia de Memoria: El sistema de Lazy Loading es efectivo porque permite que no se carguen todos los objetos de un sistema, sino que se apliquen los necesarios dependiendo de la labor solicitada
+- Estandarización: Mantener un estándar promueve la portabilidad de un trabajo a distintos departamentos de un área, y ayuda a la comunidad programadora en general, permitiendo que un grupo de personas dominen un campo y se puedan crear soluciones de manera más rápida y robusta.  
+
 
 
 
